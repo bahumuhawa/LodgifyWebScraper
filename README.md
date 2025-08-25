@@ -1,1 +1,1 @@
-# LodgifyScraper
+# LodgifyWebScraper
