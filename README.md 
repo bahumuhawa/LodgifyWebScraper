@@ -1,0 +1,40 @@
+# 🏨 Hotel Revenue Intelligence – Web Scraping
+
+A data pipeline for extracting and analyzing **hotel pricing data from Booking.com** to support revenue optimization.  
+The project automates **scraping, cleaning, transformation, database loading, and analysis** using Python and PostgreSQL.  
+
+---
+
+## 📂 Files
+- `scraper.py` → Scrapes hotel data  
+- `cleaner_transform.py` → Cleans raw data → `cleaned_data.csv`  
+- `d_loader.py` → Loads data into PostgreSQL (`create_table.sql`)  
+- `analysis.py` → Trends & insights → `analysis_results.xlsx`  
+- `requirements.txt` → Dependencies  
+
+Data samples: `raw_data.csv`, `oslo_hotels.csv`, `stockholm.csv`  
+
+---
+
+## ⚙️ Tech Stack
+Python · BeautifulSoup · Selenium · Pandas · PostgreSQL · Matplotlib  
+
+---
+
+## 🚀 Run
+```bash
+pip install -r requirements.txt
+python scraper.py
+python cleaner_transform.py
+python d_loader.py
+python analysis.py
+````
+
+---
+
+## 📌 Next Steps
+
+* Add dashboards
+* Expand to more cities
+* Automate with Airflow
+* ML for price prediction
